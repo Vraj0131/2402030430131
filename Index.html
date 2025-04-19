@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Gardening Planner</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <svg width="30" height="30" viewBox="0 0 24 24">
+                <path d="M12,3C16.97,3 21,7.03 21,12C21,16.97 16.97,21 12,21C7.03,21 3,16.97 3,12C3,7.03 7.03,3 12,3M12,5C8.14,5 5,8.14 5,12C5,15.86 8.14,19 12,19A7,7 0 0,0 12,5M5.46,5.46L4,4C5.92,2.08 8.38,1 11,1C13.62,1 16.08,2.08 18,4L16.54,5.46C15,4 13.08,3 11,3C8.92,3 7,4 5.46,5.46M12,7A5,5 0 0,0 7,12C7,14.76 9.24,17 12,17C14.76,17 17,14.76 17,12A5,5 0 0,0 12,7Z" />
+            </svg>
+            <span>Digital Garden Planner</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Plants</a></li>
+                <li><a href="#">Resources</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Plan Your Perfect Garden</h1>
+        <p>Design, organize, and maintain your garden with our comprehensive digital planning tools. Whether you're a beginner or an expert gardener, we've got you covered.</p>
+        <a href="#" class="btn">Get Started Free</a>
+    </section>
+    
+    <!-- Features Section -->
+    <section class="features">
+        <h2 class="section-title">Why Choose Digital Garden Planner?</h2>
+        <div class="features-container">
+            <div class="feature-card">
+                <div class="feature-img">
+                    <svg width="60" height="60" viewBox="0 0 24 24" fill="#FFF">
+                        <path d="M18,18H6V6H18M18,4H6A2,2 0 0,0 4,6V18A2,2 0 0,0 6,20H18A2,2 0 0,0 20,18V6C20,4.89 19.1,4 18,4M14,10H10V12H14V10Z" />
+                    </svg>
+                </div>
+                <div class="feature-content">
+                    <h3>Easy Planning</h3>
+                    <p>Drag-and-drop interface to create your garden layout with precise measurements and spacing.</p>
+                </div>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-img">
+                    <svg width="60" height="60" viewBox="0 0 24 24" fill="#FFF">
+                        <path d="M12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,7A5,5 0 0,0 7,12A5,5 0 0,0 12,17A5,5 0 0,0 17,12A5,5 0 0,0 12,7Z" />
+                    </svg>
+                </div>
+                <div class="feature-content">
+                    <h3>Plant Database</h3>
+                    <p>Access thousands of plants with detailed growing instructions, companion planting tips, and more.</p>
+                </div>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-img">
+                    <svg width="60" height="60" viewBox="0 0 24 24" fill="#FFF">
+                        <path d="M19,3H5C3.89,3 3,3.89 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5C21,3.89 20.1,3 19,3M19,5V19H5V5H19Z" />
+                        <rect x="7" y="7" width="2" height="2" />
+                        <rect x="11" y="7" width="2" height="2" />
+                        <rect x="15" y="7" width="2" height="2" />
+                        <rect x="7" y="11" width="2" height="2" />
+                        <rect x="11" y="11" width="2" height="2" />
+                        <rect x="15" y="11" width="2" height="2" />
+                        <rect x="7" y="15" width="2" height="2" />
+                        <rect x="11" y="15" width="2" height="2" />
+                        <rect x="15" y="15" width="2" height="2" />
+                    </svg>
+                </div>
+                <div class="feature-content">
+                    <h3>Seasonal Reminders</h3>
+                    <p>Get personalized notifications for planting, watering, fertilizing, and harvesting your garden.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Interactive Planner Preview -->
+    <section class="planner">
+        <h2 class="section-title">What to Plant This Season</h2>
+        <div class="planner-container">
+            <div class="season-selector">
+                <button class="season-btn" id="spring">Spring</button>
+                <button class="season-btn active" id="summer">Summer</button>
+                <button class="season-btn" id="fall">Fall</button>
+                <button class="season-btn" id="winter">Winter</button>
+            </div>
+            
+            <div class="garden-grid">
+                <div class="plant-item" data-season="summer">
+                    <div class="plant-icon">🍅</div>
+                    <h3>Tomatoes</h3>
+                </div>
+                <div class="plant-item" data-season="summer">
+                    <div class="plant-icon">🥒</div>
+                    <h3>Cucumbers</h3>
+                </div>
+                <div class="plant-item" data-season="summer">
+                    <div class="plant-icon">🌶️</div>
+                    <h3>Peppers</h3>
+                </div>
+                <div class="plant-item" data-season="summer">
+                    <div class="plant-icon">🥕</div>
+                    <h3>Carrots</h3>
+                </div>
+                <div class="plant-item" data-season="summer">
+                    <div class="plant-icon">🌱</div>
+                    <h3>Basil</h3>
+                </div>
+                <div class="plant-item" data-season="summer">
+                    <div class="plant-icon">🌽</div>
+                    <h3>Corn</h3>
+                </div>
+                <div class="plant-item" data-season="summer">
+                    <div class="plant-icon">🥬</div>
+                    <h3>Lettuce</h3>
+                </div>
+                <div class="plant-item" data-season="summer">
+                    <div class="plant-icon">🍓</div>
+                    <h3>Strawberries</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Call to Action Section -->
+    <section class="cta">
+        <h2>Ready to Start Your Garden Journey?</h2>
+        <p>Join thousands of gardeners who are growing beautiful and productive gardens with our digital planning tools.</p>
+        <a href="#" class="btn">Create Your Free Account</a>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Digital Garden Planner</h3>
+                <p>The ultimate tool for planning, managing, and enjoying your garden year-round.</p>
+                <div class="social-links">
+                    <a href="#">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="white">
+                            <path d="M12 2.04C6.5 2.04 2 6.53 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.85C10.44 7.34 11.93 5.96 14.22 5.96C15.31 5.96 16.45 6.15 16.45 6.15V8.62H15.19C13.95 8.62 13.56 9.39 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96A10 10 0 0 0 22 12.06C22 6.53 17.5 2.04 12 2.04Z" />
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="white">
+                            <path d="M22.46,6C21.69,6.35 20.86,6.58 20,6.69C20.88,6.16 21.56,5.32 21.88,4.31C21.05,4.81 20.13,5.16 19.16,5.36C18.37,4.5 17.26,4 16,4C13.65,4 11.73,5.92 11.73,8.29C11.73,8.63 11.77,8.96 11.84,9.27C8.28,9.09 5.11,7.38 3,4.79C2.63,5.42 2.42,6.16 2.42,6.94C2.42,8.43 3.17,9.75 4.33,10.5C3.62,10.5 2.96,10.3 2.38,10C2.38,10 2.38,10 2.38,10.03C2.38,12.11 3.86,13.85 5.82,14.24C5.46,14.34 5.08,14.39 4.69,14.39C4.42,14.39 4.15,14.36 3.89,14.31C4.43,16 6,17.26 7.89,17.29C6.43,18.45 4.58,19.13 2.56,19.13C2.22,19.13 1.88,19.11 1.54,19.07C3.44,20.29 5.7,21 8.12,21C16,21 20.33,14.46 20.33,8.79C20.33,8.6 20.33,8.42 20.32,8.23C21.16,7.63 21.88,6.87 22.46,6Z" />
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="white">
+                            <path d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z" />
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="white">
+                            <path d="M19.82,2H4.18C2.97,2 2,2.97 2,4.18V19.82C2,21.03 2.97,22 4.18,22H19.82C21.03,22 22,21.03 22,19.82V4.18C22,2.97 21.03,2 19.82,2M19.82,4V15.43C19.82,16.32 19.1,17.04 18.21,17.04C17.33,17.04 16.61,16.32 16.61,15.43C16.61,14.54 17.33,13.82 18.21,13.82C18.21,13.82 18.9,13.82 19.82,14.31V4H19.82M4.18,20V8.57C4.18,7.68 4.9,6.96 5.79,6.96C6.67,6.96 7.39,7.68 7.39,8.57C7.39,9.46 6.67,10.18 5.79,10.18C5.79,10.18 5.1,10.18 4.18,9.69V20H4.18Z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="#">Plant Database</a></li>
+                    <li><a href="#">Gardening Tips</a></li>
+                    <li><a href="#">Community Forum</a></li>
+                    <li><a href="#">Seasonal Guides</a></li>
+                    <li><a href="#">Video Tutorials</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Help Center</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>&copy; 2025 Digital Garden Planner. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
